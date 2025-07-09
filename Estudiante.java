@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Taller1.ejercicios;
+package Taller4.ejercicios;
 
 /**
  *
@@ -12,33 +12,43 @@ public class Estudiante {
     
     private String nombre;
     private int edad;
-    private String curso;
+    private double notaPromedio;
 
-   
-    public Estudiante() {
-        this.nombre = "Sin nombre";
-        this.edad = 0;
-        this.curso = "Ninguno";
+ 
+    public String getNombre() {
+        return nombre;
     }
 
-    
-    public Estudiante(String nombre, int edad) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.curso = "Ninguno";
+    public void setNombre(String nombre) {
+        if (!nombre.isEmpty()) {
+            this.nombre = nombre;
+        } else {
+            System.out.println("El nombre no puede estar vacío.");
+        }
     }
 
-    
-    public Estudiante(String nombre, int edad, String curso) {
-        this(nombre, edad); // llama al constructor de nombre y edad
-        this.curso = curso; // asigna el curso
+    public int getEdad() {
+        return edad;
     }
 
-   
-    public void mostrarEstudiante() {
-        System.out.println("Nombre: " + this.nombre);
-        System.out.println("Edad: " + this.edad);
-        System.out.println("Curso: " + this.curso);
+    public void setEdad(int edad) {
+        if (edad >= 0) {
+            this.edad = edad;
+        } else {
+            System.out.println("La edad no puede ser negativa.");
+        }
+    }
+ 
+    public double getNotaPromedio() {
+        return notaPromedio;
+    }
+
+    public void setNotaPromedio(double notaPromedio) {
+        if (notaPromedio >= 0 && notaPromedio <= 5) {
+            this.notaPromedio = notaPromedio;
+        } else {
+            System.out.println("La nota promedio debe estar entre 0 y 5.");
+        }
     }
     
 }
