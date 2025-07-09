@@ -8,12 +8,6 @@ package Taller12.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    public interface Volador {
-    void volar();
-}
-
-public class Pajaro implements Volador {
-    // No implementa volar() 
-}
+public interface Nadador {
+    void nadar();
 }

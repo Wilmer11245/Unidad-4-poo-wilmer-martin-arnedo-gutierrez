@@ -8,12 +8,10 @@ package Taller12.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    public interface Volador {
-    void volar();
-}
-
-public class Pajaro implements Volador {
-    // No implementa volar() 
-}
+public class PruebaAve {
+    public static void main(String[] args) {
+        Ave ave1 = new Ave();
+        ave1.volar();
+        ave1.cantar();
+    }
 }

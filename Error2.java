@@ -8,12 +8,15 @@ package Taller12.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    public interface Volador {
-    void volar();
+public class Error2 {
+    public interface Nadador {
+    void nadar();
 }
 
-public class Pajaro implements Volador {
-    // No implementa volar() 
+public class Computador implements Nadador {
+    @Override
+    public void nadar() {
+        System.out.println("El computador está nadando... (no tiene sentido)");
+    }
 }
 }
