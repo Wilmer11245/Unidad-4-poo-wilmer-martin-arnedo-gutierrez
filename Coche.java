@@ -2,35 +2,27 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Taller4.ejercicios;
+package Taller8.ejercicios;
 
 /**
  *
  * @author Usuario
  */
-public class Coche {
+public class Coche extends Vehiculo {
     
-    private String marca;
-    private String modelo;
-    private int velocidadMaxima;
+    int numeroDePuertas;
 
-    public Coche(String marca, String modelo, int velocidadMaxima) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.velocidadMaxima = velocidadMaxima;
-    }
- 
-    public int getVelocidadMaxima() {
-        return velocidadMaxima;
+    // Constructor
+    public Coche(String marca, int velocidadMaxima, int numeroDePuertas) {
+        super(marca, velocidadMaxima);
+        this.numeroDePuertas = numeroDePuertas;
     }
 
-    public void acelerar(int incremento) {
-        if (incremento > 0) {
-            velocidadMaxima += incremento;
-            System.out.println("Nueva velocidad máxima: " + velocidadMaxima);
-        } else {
-            System.out.println("El incremento debe ser positivo.");
-        }
+  
+    @Override
+    public void mostrarInformacion() {
+        super.mostrarInformacion();
+        System.out.println("Número de puertas: " + numeroDePuertas);
     }
-    
 }
+

@@ -8,19 +8,17 @@ package Taller8.ejercicios;
  *
  * @author Usuario
  */
-public class Estudiante extends Persona {
-    String matricula;
+public class Persona {
+    String nombre;
+    int edad;
 
-   
-    public Estudiante(String nombre, int edad, String matricula) {
-        super(nombre, edad);
-        this.matricula = matricula;
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
-   
-    @Override
     public void mostrarDetalles() {
-        super.mostrarDetalles();
-        System.out.println("Matrícula: " + matricula);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
     }
 }
