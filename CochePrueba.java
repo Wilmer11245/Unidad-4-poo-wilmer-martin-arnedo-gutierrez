@@ -8,17 +8,15 @@ package Taller4.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    
-    private String nombre;
-   }
- 
-
-public class pruebaError {
+public class CochePrueba {
+   
     public static void main(String[] args) {
-        Persona p1 = new Persona();
-        p1.nombre = "Ana";
+        Coche c1 = new Coche("Toyota", "Corolla", 180);
+
+        
+
+        c1.acelerar(20); 
+        c1.acelerar(-10);
         
     }
-    
 }
