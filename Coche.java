@@ -2,27 +2,27 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Taller8.ejercicios;
+package Taller1.ejemplos;
 
 /**
  *
  * @author Usuario
  */
-public class Coche extends Vehiculo {
-    
-    int numeroDePuertas;
+public class Coche {
+String marca;
+String modelo;
 
-    // Constructor
-    public Coche(String marca, int velocidadMaxima, int numeroDePuertas) {
-        super(marca, velocidadMaxima);
-        this.numeroDePuertas = numeroDePuertas;
-    }
-
-  
-    @Override
-    public void mostrarInformacion() {
-        super.mostrarInformacion();
-        System.out.println("Número de puertas: " + numeroDePuertas);
-    }
+public Coche() {
+this.marca = "Desconocida";
 }
 
+public Coche(String marca) {
+this.marca = marca;
+}
+
+
+public Coche(String marca, String modelo) {
+this.marca = marca;
+this.modelo = modelo;
+}
+}
