@@ -8,18 +8,19 @@ package Taller11.ejercicios;
  *
  * @author Usuario
  */
-public class Gerente extends Empleado {
-    double salarioBase;
+public class Rectangulo extends Figura {
+    double base;
+    double altura;
 
     
-    public Gerente(String nombre, double salarioBase) {
-        super(nombre);
-        this.salarioBase = salarioBase;
+    public Rectangulo(double base, double altura) {
+        this.base = base;
+        this.altura = altura;
     }
 
     
     @Override
-    public double calcularSalario() {
-        return salarioBase + 2000000; 
+    public double calcularArea() {
+        return base * altura;
     }
 }

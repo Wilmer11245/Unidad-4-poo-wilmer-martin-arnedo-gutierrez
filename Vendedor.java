@@ -8,18 +8,20 @@ package Taller11.ejercicios;
  *
  * @author Usuario
  */
-public class Gerente extends Empleado {
-    double salarioBase;
+public class Vendedor extends Empleado {
+    double ventas;
+    double comision;
 
-    
-    public Gerente(String nombre, double salarioBase) {
+  
+    public Vendedor(String nombre, double ventas, double comision) {
         super(nombre);
-        this.salarioBase = salarioBase;
+        this.ventas = ventas;
+        this.comision = comision;
     }
 
-    
+  
     @Override
     public double calcularSalario() {
-        return salarioBase + 2000000; 
+        return ventas * comision;
     }
 }

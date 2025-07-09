@@ -8,14 +8,12 @@ package Taller11.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-   public abstract class Animal {
-    public abstract void sonido();
-}
+public abstract class Figura {
+   
+    public abstract double calcularArea();
 
-public class PruebaAnimal {
-    public static void main(String[] args) {
-        // Animal a = new Animal(); 
+    
+    public void mostrarArea() {
+        System.out.println("El área es: " + calcularArea());
     }
-} 
 }

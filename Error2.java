@@ -8,14 +8,10 @@ package Taller11.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-   public abstract class Animal {
-    public abstract void sonido();
-}
-
-public class PruebaAnimal {
-    public static void main(String[] args) {
-        // Animal a = new Animal(); 
+public class Error2 {
+    public abstract class Vehiculo {
+    public void arrancar() {
+        System.out.println("El vehículo arranca.");
     }
-} 
+}
 }

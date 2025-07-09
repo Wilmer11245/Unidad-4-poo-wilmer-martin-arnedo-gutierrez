@@ -8,18 +8,17 @@ package Taller11.ejercicios;
  *
  * @author Usuario
  */
-public class Gerente extends Empleado {
-    double salarioBase;
+public class Circulo extends Figura {
+    double radio;
 
     
-    public Gerente(String nombre, double salarioBase) {
-        super(nombre);
-        this.salarioBase = salarioBase;
+    public Circulo(double radio) {
+        this.radio = radio;
     }
 
-    
+   
     @Override
-    public double calcularSalario() {
-        return salarioBase + 2000000; 
+    public double calcularArea() {
+        return Math.PI * radio * radio;
     }
 }
