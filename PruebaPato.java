@@ -8,13 +8,10 @@ package Taller13.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    public interface Cantante {
-    void cantar();
-}
-
-public class Persona implements Cantante {
-    // Falta implementar cantar() 
-}
-    
+public class PruebaPato {
+    public static void main(String[] args) {
+        Pato pato1 = new Pato();
+        pato1.volar();
+        pato1.nadar();
+    }
 }

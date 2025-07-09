@@ -8,13 +8,14 @@ package Taller13.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    public interface Cantante {
-    void cantar();
-}
+public class Pato implements Volador, Nadador {
+    @Override
+    public void volar() {
+        System.out.println("El pato está volando.");
+    }
 
-public class Persona implements Cantante {
-    // Falta implementar cantar() 
-}
-    
+    @Override
+    public void nadar() {
+        System.out.println("El pato está nadando.");
+    }
 }

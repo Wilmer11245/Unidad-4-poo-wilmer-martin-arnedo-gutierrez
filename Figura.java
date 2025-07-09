@@ -8,13 +8,7 @@ package Taller13.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    public interface Cantante {
-    void cantar();
-}
-
-public class Persona implements Cantante {
-    // Falta implementar cantar() 
-}
-    
+public abstract class Figura {
+   
+    public abstract double calcularArea();
 }

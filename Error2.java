@@ -8,13 +8,12 @@ package Taller13.ejercicios;
  *
  * @author Usuario
  */
-public class Error {
-    public interface Cantante {
-    void cantar();
-}
-
-public class Persona implements Cantante {
-    // Falta implementar cantar() 
+public class Error2 {
+    public abstract class Animal {
+    
+    public void respirar() {
+        System.out.println("El animal respira.");
+    }
 }
     
 }
