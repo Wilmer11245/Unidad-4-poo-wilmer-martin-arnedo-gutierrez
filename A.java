@@ -8,10 +8,11 @@ package Taller8.ejercicios;
  *
  * @author Usuario
  */
-public class PruebaEstudiante {
-    
-    public static void main(String[] args) {
-        Estudiante e1 = new Estudiante("Ana", 20, "20251345");
-        e1.mostrarDetalles();
-    }
+   public class A {
+    // Clase A
 }
+ 
+//public class B {
+    // Clase B
+//}
+

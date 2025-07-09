@@ -2,27 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Taller6.ejercicios;
+package Taller8.ejercicios;
 
 /**
  *
  * @author Usuario
  */
-    public class Vehiculo {
+public class Vehiculo {
     
-    protected String tipo;
-    protected String marca;
-
-    
-    public Vehiculo(String tipo, String marca) {
-        this.tipo = tipo;
+    String marca;
+    int velocidadMaxima;
+ 
+    public Vehiculo(String marca, int velocidadMaxima) {
         this.marca = marca;
+        this.velocidadMaxima = velocidadMaxima;
     }
 
-    public void mostrarVehiculo() {
-        System.out.println("Tipo: " + tipo);
+    public void mostrarInformacion() {
         System.out.println("Marca: " + marca);
+        System.out.println("Velocidad máxima: " + velocidadMaxima + " km/h");
     }
 }
-    
-
