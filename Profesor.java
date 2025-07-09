@@ -8,6 +8,9 @@ package Taller14.ejercicios;
  *
  * @author Usuario
  */
-public class NewClass {
-    
+public class Profesor extends Persona {
+    @Override
+    public void presentarse() {
+        System.out.println("Hola, soy un profesor.");
+    }
 }

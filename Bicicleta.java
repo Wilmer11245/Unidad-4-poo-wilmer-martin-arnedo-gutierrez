@@ -8,6 +8,9 @@ package Taller14.ejercicios;
  *
  * @author Usuario
  */
-public class NewClass {
-    
+public class Bicicleta extends Vehiculo {
+    @Override
+    public void mover() {
+        System.out.println("La bicicleta está avanzando por la ciclovía.");
+    }
 }

@@ -8,12 +8,14 @@ package Taller14.ejercicios;
  *
  * @author Usuario
  */
-public class PruebaVehiculo {
+public class PruebaPersona {
     public static void main(String[] args) {
-        Vehiculo v1 = new Coche();
-        Vehiculo v2 = new Bicicleta();
+        Persona p = new Persona();
+        Persona e = new Estudiante();
+        Persona prof = new Profesor();
 
-        v1.mover(); 
-        v2.mover(); 
+        p.presentarse();    
+        e.presentarse();    
+        prof.presentarse(); 
     }
 }

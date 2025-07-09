@@ -8,6 +8,12 @@ package Taller14.ejercicios;
  *
  * @author Usuario
  */
-public class NewClass {
-    
+public class PruebaFigura {
+    public static void main(String[] args) {
+        Figura f1 = new Circulo(5);
+        Figura f2 = new Rectangulo(4, 6);
+
+        f1.calcularArea(); // área del círculo
+        f2.calcularArea(); // área del rectángulo
+    }
 }

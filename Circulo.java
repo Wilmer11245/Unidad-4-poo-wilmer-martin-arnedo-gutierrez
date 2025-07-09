@@ -8,10 +8,16 @@ package Taller14.ejercicios;
  *
  * @author Usuario
  */
-public class Coche extends Vehiculo {
+public class Circulo extends Figura {
+    double radio;
+
+    public Circulo(double radio) {
+        this.radio = radio;
+    }
+
     @Override
-    public void mover() {
-        System.out.println("El coche está avanzando por la carretera.");
+    public void calcularArea() {
+        double area = Math.PI * radio * radio;
+        System.out.println("El área del círculo es: " + area);
     }
 }
-
