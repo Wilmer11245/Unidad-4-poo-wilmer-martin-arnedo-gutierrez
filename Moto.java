@@ -8,20 +8,14 @@ package Taller5.ejercicios;
  *
  * @author Usuario
  */
-public class Cliente {
-    
-    private String nombre; 
-    int edad; 
 
-    
-    public String getNombre() {
-        return nombre;
+    public class Moto extends Vehiculo {
+    public Moto(String tipo) {
+        super(tipo);
     }
 
-    public void setNombre(String nombre) {
-        if (!nombre.isEmpty()) {
-            this.nombre = nombre;
-        }
+    void mostrarMoto() {
+        System.out.println("Esta es una moto de tipo: " + tipo);
     }
     
 }

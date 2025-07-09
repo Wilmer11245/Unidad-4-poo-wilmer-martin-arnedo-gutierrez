@@ -8,20 +8,14 @@ package Taller5.ejercicios;
  *
  * @author Usuario
  */
-public class Cliente {
+public class PruebaProducto {
     
-    private String nombre; 
-    int edad; 
+    public static void main(String[] args) {
+        Producto p1 = new Producto("Jabón", 2500, 50);
+        p1.mostrarInfo();
 
-    
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        if (!nombre.isEmpty()) {
-            this.nombre = nombre;
-        }
+        
+        System.out.println("Acceso directo al stock: " + p1.stock);
     }
     
 }

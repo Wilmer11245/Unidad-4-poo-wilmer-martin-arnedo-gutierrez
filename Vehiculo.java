@@ -8,20 +8,16 @@ package Taller5.ejercicios;
  *
  * @author Usuario
  */
-public class Cliente {
+public class Vehiculo {
     
-    private String nombre; 
-    int edad; 
+    String tipo; // acceso de paquete (default)
 
-    
-    public String getNombre() {
-        return nombre;
+    public Vehiculo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public void setNombre(String nombre) {
-        if (!nombre.isEmpty()) {
-            this.nombre = nombre;
-        }
+    void mostrarTipo() {
+        System.out.println("Tipo de vehículo: " + tipo);
     }
     
 }
