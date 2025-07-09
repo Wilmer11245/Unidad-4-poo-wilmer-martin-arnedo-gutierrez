@@ -8,8 +8,10 @@ package Taller10.ejercicios;
  *
  * @author Usuario
  */
-public class Vehiculo {
-    public void moverse() {
-        System.out.println("El vehículo se está moviendo.");
+public class Profesor extends Persona {
+    
+    @Override
+    public void presentarse() {
+        System.out.println("Hola, soy un profesor.");
     }
 }

@@ -8,8 +8,9 @@ package Taller10.ejercicios;
  *
  * @author Usuario
  */
-public class Vehiculo {
+public class Bicicleta extends Vehiculo {
+    @Override
     public void moverse() {
-        System.out.println("El vehículo se está moviendo.");
+        System.out.println("La bicicleta avanza pedaleando.");
     }
 }

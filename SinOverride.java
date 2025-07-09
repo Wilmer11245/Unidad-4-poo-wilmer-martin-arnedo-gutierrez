@@ -8,8 +8,11 @@ package Taller10.ejercicios;
  *
  * @author Usuario
  */
-public class Vehiculo {
-    public void moverse() {
-        System.out.println("El vehículo se está moviendo.");
+public class SinOverride {
+    public class Gato extends Animal {
+    // Sin @Override
+    public void hacerSonido() {
+        System.out.println("Miau");
     }
+}
 }
