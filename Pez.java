@@ -8,21 +8,18 @@ package Taller9.ejercicios;
  *
  * @author Usuario
  */
+public class Pez extends Animal {
+    String tipoDeAgua;
 
-    public class Persona {
-    String nombre;
-    int edad;
-
-    
-    public Persona(String nombre, int edad) {
-        this.nombre = nombre;
-        this.edad = edad;
+   
+    public Pez(String especie, String tipoDeAgua) {
+        super(especie);
+        this.tipoDeAgua = tipoDeAgua;
     }
 
-    
+  
     public void mostrarDetalles() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad);
+        super.mostrarEspecie(); 
+        System.out.println("Tipo de agua: " + tipoDeAgua);
     }
 }
-   
