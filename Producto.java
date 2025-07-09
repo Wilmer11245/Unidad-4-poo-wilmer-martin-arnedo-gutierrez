@@ -2,29 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Taller5.ejercicios;
-import default
+package Taller2.ejercicios;
+
 /**
  *
  * @author Usuario
  */
 public class Producto {
-   
-    String nombre;
-    double precio;
-    int stock;
+    
+    private String nombre;
+    private double precio;
 
-   
-    Producto(String nombre, double precio, int stock) {
-        this.nombre = nombre;
+    public Producto(String nombre, double precio) {
+        this.nombre = nombre; // 'this' diferencia el atributo de la variable del parámetro
         this.precio = precio;
-        this.stock = stock;
     }
 
-   
-    void mostrarInfo() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Precio: $" + precio);
-        System.out.println("Stock: " + stock);
+    public void mostrarProducto() {
+        System.out.println("Nombre del producto: " + this.nombre);
+        System.out.println("Precio: $" + this.precio);
     }
+    
 }
