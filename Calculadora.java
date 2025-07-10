@@ -8,12 +8,9 @@ package Taller3.ejemplos;
  *
  * @author Usuario
  */
-public class Error {
-    public class Persona {
-private String nombre;
-public static void mostrarNombre() {
-System.out.println("Nombre: " + nombre); 
+public class Calculadora {
+public static int sumar(int a, int b) {
+return a + b;
 }
 }
 
-}

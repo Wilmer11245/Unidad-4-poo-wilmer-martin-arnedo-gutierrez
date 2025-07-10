@@ -8,12 +8,16 @@ package Taller3.ejemplos;
  *
  * @author Usuario
  */
-public class Error {
-    public class Persona {
-private String nombre;
-public static void mostrarNombre() {
-System.out.println("Nombre: " + nombre); 
+public class Error2 {
+   public class Banco {
+public static double tasaInteres = 0.05; 
+public static void modificarTasa(double nuevaTasa) {
+tasaInteres = nuevaTasa; 
 }
-}
+public static void cambiarSaldo(double saldo) {
 
+saldo = saldo * (1 + tasaInteres); 
+}
+}
+ 
 }

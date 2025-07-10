@@ -8,12 +8,14 @@ package Taller3.ejemplos;
  *
  * @author Usuario
  */
-public class Error {
-    public class Persona {
-private String nombre;
-public static void mostrarNombre() {
-System.out.println("Nombre: " + nombre); 
+public class Contador {
+static int contadorGlobal = 0; 
+public Contador() {
+contadorGlobal++; 
+}
+public static void mostrarContador() {
+System.out.println("Contador global: " + contadorGlobal);
 }
 }
 
-}
+
